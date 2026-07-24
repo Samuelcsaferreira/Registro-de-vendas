@@ -1,15 +1,15 @@
-from models.vendas import Vendas
-from repository.vendasRepository import VendasRepository
+from app.models.vendas import Vendas
+from app.repository.SalesRepository import SalesRepository
 
 
 class VendasService:
     """Classe de Serviço para vendas. Responsável por instanciar
     a classe Vendas e Registrar suas informações no banco através
-    da clase de VendasRepository"""
+    da clase de SalesRepository"""
 
     def __init__(self, repository=None):
         self.dados = None
-        self.repository = repository or VendasRepository()
+        self.repository = repository or SalesRepository()
 
     def registrar_venda(self, valor, pagamento, data):
         registro = Vendas(valor, pagamento, data)

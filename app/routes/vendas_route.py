@@ -1,5 +1,5 @@
 from flask import Blueprint, request, render_template, redirect, jsonify
-from services.vendasService import VendasService
+from app.services.vendasService import VendasService
 from datetime import datetime
 import json
 

@@ -1,5 +1,5 @@
 from flask import Flask
-from routes.vendas_route import vendas_bp
+from app.routes.vendas_route import vendas_bp
 
 
 app = Flask(__name__)
